@@ -13,6 +13,9 @@ public class CalculadorEstadisticas {
 
     public CalculadorEstadisticas() {
     }
+//calcula los datos estadísticos para un tamaño de vector en concreto ,hace la media  con 10 ejmplares
+//oredenados aleatoriamente  y calcula los datos estadísticos para un ejmplar en orden inverso y 
+// devuelve un vector con estos 2 elementos
 
     public static DatosEstadisticos[] estadisticaOrdenaVector(Ordenar1Vector ordenaVector, int size) {
         DatosEstadisticos datosEstadistico = new DatosEstadisticos();
@@ -27,7 +30,7 @@ public class CalculadorEstadisticas {
         ordenaVector.ordena(GeneraCaso.generaVector(size, false), datosEstadisticosImpar);
         return new DatosEstadisticos[]{datosEstadisticosImpar, datosEstadistico};
     }
-
+ //calcula los datos estadísticos para una secuencia de vectores de distintos tamaños 
     public static DatosEstadisticos[][] estadisticasOrdenaVectores(OrdenarVector m, int[] tam_vectores) {
         DatosEstadisticos[][] datosEstadisticos = new DatosEstadisticos[2][tam_vectores.length];
         DatosEstadisticos[] tempCalculadorEstadistica;
