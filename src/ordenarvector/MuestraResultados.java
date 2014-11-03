@@ -10,7 +10,6 @@ package ordenarvector;
  * @author usuario
  */
 public class MuestraResultados {
-
     /**
      * @param args the command line arguments
      */
